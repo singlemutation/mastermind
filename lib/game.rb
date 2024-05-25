@@ -5,13 +5,7 @@
 #  3. Check if any colors are in correct position, if so place red pegs
 #  4. Check if any colors are in wrong position, but in array, if so place white pegs
 
-class Board
-  COLORS = %w[red green purple yellow brown orange].freeze
-  def initialize
-    @game_array = COLORS.sample(4)
-  end
-  attr_reader :game_array
-end
+
 
 class Game
   def initialize
@@ -57,6 +51,3 @@ class Game
   end
 
 end
-
-
-game = Game.new
